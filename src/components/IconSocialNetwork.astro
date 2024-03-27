@@ -1,0 +1,21 @@
+---
+const { url, icon, alt } = Astro.props;
+---
+
+<style>
+    a {
+        text-decoration: none;
+    }
+    a img {
+        font-size: 2em;
+        margin: 0% 1%;
+    }
+    @media (max-width: 720px) {
+        a img {
+            margin: 0% 3%;
+        }
+    }
+</style>
+<a href={url} target="_blank">
+    <img loading="lazy" src={`/src/assets/${icon}`} alt={alt} />
+</a>
