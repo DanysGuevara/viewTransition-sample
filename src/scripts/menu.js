@@ -22,7 +22,6 @@ document.querySelectorAll(".menu-link").forEach((link) => {
 window.addEventListener("scroll", () => {
     if (window.scrollY >= 85) {
         headerMenu.classList.add("on-scroll");
-        console.log(window.scrollY)
     } else {
         headerMenu.classList.remove("on-scroll");
     }
