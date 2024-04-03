@@ -25,6 +25,11 @@ body {
     font-weight: 400;
     line-height: 1.5;
     height: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Establece la altura mínima del cuerpo para ocupar toda la pantalla */
+    margin: 0;
 }
 
 a,
@@ -47,5 +52,7 @@ button {
  */
 
 main {
+    margin-top: 65px;
     overflow: hidden;
+    flex: 1;
 }
